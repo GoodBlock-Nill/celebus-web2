@@ -11,6 +11,7 @@
 
 - React
 - Material-UI (UI 구성 요소 및 테마용)
+- iconify (아이콘) (https://icon-sets.iconify.design/)
 - React-i18next (다국어용)
 - i18next-browser-languagedetector (언어 감지용)
 
