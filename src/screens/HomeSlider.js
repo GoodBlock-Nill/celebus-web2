@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { Box, Typography } from '@mui/material';
+import Screen1 from './Screen1/Screen1';
 
 const HomeSlider = () => {
   const settings = {
@@ -17,7 +18,7 @@ const HomeSlider = () => {
     <Box>
       <Slider {...settings}>
         <Box>
-          <Typography variant="h2">Slide 1</Typography>
+          <Screen1 />
         </Box>
         <Box>
           <Typography variant="h2">Slide 2</Typography>

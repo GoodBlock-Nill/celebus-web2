@@ -1,1 +1,8 @@
-{}
+{
+  "language": {
+    "English": "English",
+    "Korean": "한국어",
+    "Japanese": "日本語",
+    "Chinese": "简体中文"
+  }
+}
