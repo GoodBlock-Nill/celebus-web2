@@ -1,20 +1,34 @@
 import React from 'react';
-import { ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter as Router } from 'react-router-dom';
-import theme from './theme';
+import { Element } from 'react-scroll';
 import Header from './components/layout/Header/Header';
-import HomeSlider from './screens/HomeSlider';
 import Footer from './components/layout/Footer/Footer';
+import Screen1 from './screens/Screen1/Screen1';
+import Screen2 from './screens/Screen2/Screen2';
+import Screen3 from './screens/Screen3/Screen3';
+import Screen4 from './screens/Screen4/Screen4';
+import Screen5 from './screens/Screen5/Screen5';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <Header />
-        <HomeSlider />
-        <Footer />
-      </Router>
-    </ThemeProvider>
+    <div className="App">
+      <Header />
+      <Element name="screen1">
+        <Screen1 />
+      </Element>
+      <Element name="screen2">
+        <Screen2 />
+      </Element>
+      <Element name="screen3">
+        <Screen3 />
+      </Element>
+      <Element name="screen4">
+        <Screen4 />
+      </Element>
+      <Element name="screen5">
+        <Screen5 />
+      </Element>
+      <Footer />
+    </div>
   );
 }
 

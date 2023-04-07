@@ -1,0 +1,36 @@
+.screen {
+  scroll-snap-align: start; /* 스크롤 스냅 정렬 */
+  min-height: 100vh; /* 최소 높이 */
+  position: relative; /* 상대 위치 */
+  overflow: hidden; /* 오버플로우 숨김 */
+  display: flex; /* 플렉스 박스 사용 */
+  background-color: #000; /* 배경색 검정 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.backgroundVideo {
+  max-width: 100vw; /* 최대 너비 */
+  position: absolute; /* 절대 위치 */
+  top: 50%; /* 상단으로부터 50% 위치 */
+  left: 50%; /* 왼쪽으로부터 50% 위치 */
+  transform: translate(-50%, -50%); /* 위치 조정 */
+  width: 100%; /* 너비 */
+  height: auto; /* 자동 높이 */
+}
+
+.volumeButton {
+  position: absolute; /* 절대 위치 */
+  z-index: 1; /* z-인덱스 */
+  background-color: white; /* 배경색 흰색 */
+  opacity: 0; /* 초기 투명도 */
+  transition: opacity 0.3s; /* 투명도 전환 효과 */
+}
+
+.volumeButton:hover {
+  opacity: 0.86; /* 마우스 오버시 투명도 변경 */
+}
+
+.volumeButton:active {
+  opacity: 0.28; /* 버튼이 눌린 상태의 투명도 변경 */
+}

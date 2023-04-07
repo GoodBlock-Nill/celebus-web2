@@ -10,13 +10,13 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import { Container, styled, useTheme } from '@mui/system';
-import { Link } from 'react-router-dom';
 import logo from '../../../assets/images/logo.png';
 import AppStoreIcon from '@mui/icons-material/Apple';
 import { Icon } from '@iconify/react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import SelectLang from '../../common/SelectLanguage';
+import { Link } from 'react-router-dom';
 
 const Logo = styled('img')(({ theme }) => ({
   maxWidth: '245.6px', // Adjust the width according to your logo size
@@ -33,7 +33,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   width: '100vw',
 }));
 
-const Header = () => {
+export default function Header() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -52,7 +52,7 @@ const Header = () => {
       <Grid item>
         <ButtonGroup>
           <Button
-            component={Link}
+            component="a"
             to="https://apps.apple.com/app/idYOUR_APP_ID"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const Header = () => {
             AppStore
           </Button>
           <Button
-            component={Link}
+            component="a"
             to="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,7 +76,7 @@ const Header = () => {
   };
 
   return (
-    <StyledAppBar position="static">
+    <StyledAppBar position="fixed">
       <Container maxWidth="lg">
         <Toolbar>
           <Grid container alignItems="center" justifyContent="space-between">
@@ -126,7 +126,7 @@ const Header = () => {
                         justifyContent="center"
                       >
                         <Button
-                          component={Link}
+                          component="a"
                           to="https://apps.apple.com/app/idYOUR_APP_ID"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -135,7 +135,7 @@ const Header = () => {
                           AppStore
                         </Button>
                         <Button
-                          component={Link}
+                          component="a"
                           to="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -157,6 +157,4 @@ const Header = () => {
       </Container>
     </StyledAppBar>
   );
-};
-
-export default Header;
+}
