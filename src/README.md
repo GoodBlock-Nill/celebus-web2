@@ -20,12 +20,92 @@ CELEBUS는 웹 애플리케이션입니다. 애플리케이션은 React, Materia
 
 ---
 
-## 폴더 구조
+## 폴더 구조(src)
 
 - `assets`: 이미지, 아이콘, 비디오, 글꼴과 같은 정적 자산이 포함되어 있습니다.
 - `components`: 애플리케이션 전체에서 사용되는 재사용 가능한 React 컴포넌트가 포함되어 있습니다.
 - `locales`: 지원되는 언어의 번역 파일이 포함되어 있습니다.
 - `screens`: 애플리케이션의 주요 화면 또는 페이지가 포함되어 있습니다.
+
+```
+
+📦src
+ ┣ 📂assets
+ ┃ ┣ 📂fonts
+ ┃ ┃ ┣ 📂Noto_Sans
+ ┃ ┃ ┃ ┣ 📜NotoSans-Black.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-BlackItalic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-Bold.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-BoldItalic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-ExtraBold.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-ExtraBoldItalic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-ExtraLight.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-ExtraLightItalic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-Italic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-Light.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-LightItalic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-Medium.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-MediumItalic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-Regular.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-SemiBold.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-SemiBoldItalic.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-Thin.ttf
+ ┃ ┃ ┃ ┣ 📜NotoSans-ThinItalic.ttf
+ ┃ ┃ ┃ ┗ 📜OFL.txt
+ ┃ ┃ ┗ 📜.DS_Store
+ ┃ ┣ 📂images
+ ┃ ┃ ┗ 📜logo.png
+ ┃ ┣ 📂styles
+ ┃ ┃ ┗ 📜fonts.css
+ ┃ ┣ 📂video
+ ┃ ┃ ┗ 📜screen1.mp4
+ ┃ ┗ 📜.DS_Store
+ ┣ 📂components
+ ┃ ┣ 📂common
+ ┃ ┃ ┣ 📂CustomIcons
+ ┃ ┃ ┗ 📜SelectLanguage.js
+ ┃ ┣ 📂features
+ ┃ ┗ 📂layout
+ ┃ ┃ ┣ 📂Footer
+ ┃ ┃ ┃ ┗ 📜Footer.js
+ ┃ ┃ ┗ 📂Header
+ ┃ ┃ ┃ ┗ 📜Header.js
+ ┣ 📂locales
+ ┃ ┣ 📂en
+ ┃ ┃ ┗ 📜translation.json
+ ┃ ┣ 📂ja
+ ┃ ┃ ┗ 📜translation.json
+ ┃ ┣ 📂ko
+ ┃ ┃ ┗ 📜translation.json
+ ┃ ┗ 📂zh
+ ┃ ┃ ┗ 📜translation.json
+ ┣ 📂screens
+ ┃ ┣ 📂Screen1
+ ┃ ┃ ┣ 📜Screen1.js
+ ┃ ┃ ┗ 📜Screen1.module.css
+ ┃ ┣ 📂Screen2
+ ┃ ┃ ┣ 📜Screen2.js
+ ┃ ┃ ┗ 📜Screen2.module.css
+ ┃ ┣ 📂Screen3
+ ┃ ┃ ┣ 📜Screen3.js
+ ┃ ┃ ┗ 📜Screen3.module.css
+ ┃ ┣ 📂Screen4
+ ┃ ┃ ┣ 📜Screen4.js
+ ┃ ┃ ┗ 📜Screen4.module.css
+ ┃ ┗ 📂Screen5
+ ┃ ┃ ┣ 📜Screen5.js
+ ┃ ┃ ┗ 📜Screen5.module.css
+ ┣ 📜.DS_Store
+ ┣ 📜.eslintrc.json
+ ┣ 📜.prettierrc
+ ┣ 📜App.js
+ ┣ 📜README.md
+ ┣ 📜i18n.js
+ ┣ 📜index.css
+ ┣ 📜index.js
+ ┗ 📜theme.js
+
+```
 
 ---
 
@@ -85,7 +165,7 @@ ESLint와 Prettier에 대한 자세한 정보는 공식 문서를 참조하십�
 
 ## 상태 관리
 
-현재 상태 관리는 React의 내장 훅을 사용하여 처리됩니다. 미래에 더 복잡한 상태 관리 솔루션이 필요한 경우 이 섹션에 자세한 내용을 업데이트하십시오.
+현재 상태 관리는 React의 내장 훅을 사용하여 처리됩니다.
 
 ---
 
