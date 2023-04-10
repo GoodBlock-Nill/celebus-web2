@@ -19,6 +19,7 @@
 - i18next-browser-languagedetector (언어 감지용)
 - React-scroll (부드러운 스크롤 및 섹션 링크용)
 - Normalize.css (브라우저별 기본 스타일을 제거하여 여러 브라우저에서 일관된 스타일을 제공하는 데 사용)
+- React-Awesome-Reveal (애니메이션 라이브러리) (https://www.npmjs.com/package/react-awesome-reveal)
 
 ---
 
@@ -175,6 +176,11 @@ ESLint와 Prettier에 대한 자세한 정보는 공식 문서를 참조하십�
 - `src/index.js`에 `normalize.css`를 추가하여 브라우저 기본스타일을 제거 하였습니다.
 
 ---
+
+## 애니메이션
+
+- `react-awesome-reveal`:
+  - Intersection Observer API를 사용하여 표시 애니메이션을 추가하여 요소가 뷰포트에 나타나는 시기를 감지하는 TypeScript로 작성된 React 앱용 라이브러리입니다.
 
 ## 상태 관리
 

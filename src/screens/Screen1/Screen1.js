@@ -39,8 +39,8 @@ const Screen1 = () => {
   };
 
   return (
-    <div className={styles.screen}>
-      {/* 비디오 요소t */}
+    <section className={styles.screen}>
+      {/* 비디오 요소 */}
       <video
         ref={videoRef}
         className={styles.backgroundVideo}
@@ -73,7 +73,7 @@ const Screen1 = () => {
           {isMuted ? <VolumeOff /> : <VolumeUp />}
         </IconButton>
       )}
-    </div>
+    </section>
   );
 };
 

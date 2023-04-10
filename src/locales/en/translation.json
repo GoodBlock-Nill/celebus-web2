@@ -4,5 +4,18 @@
     "Korean": "한국어",
     "Japanese": "日本語",
     "Chinese": "简体中文"
+  },
+
+  "screen2": {
+    "text1": "Scan Your",
+    "text2": "QR",
+    "text3": "Get Your",
+    "text4": "Digital Goods!"
+  },
+
+  "screen3": {
+    "text1": "Check out Your",
+    "text2": "Digital Goods",
+    "text3": "On"
   }
 }

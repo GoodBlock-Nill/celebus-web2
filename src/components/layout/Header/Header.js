@@ -18,21 +18,25 @@ import CloseIcon from '@mui/icons-material/Close';
 import SelectLang from '../../common/SelectLanguage';
 import { Link } from 'react-router-dom';
 
+// 로고 스타일을 설정합니다.
 const Logo = styled('img')(({ theme }) => ({
   maxWidth: '245.6px', // Adjust the width according to your logo size
 }));
 
+// 버튼 그룹 스타일을 설정합니다.
 const ButtonGroup = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
 }));
 
+// AppBar 스타일을 설정합니다.
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backgroundColor: theme.palette.background.main, // Replace this with your desired color
   boxShadow: 'none',
   width: '100vw',
 }));
 
+// Header 컴포넌트를 정의합니다.
 export default function Header() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
@@ -47,6 +51,7 @@ export default function Header() {
     setDrawerOpen(open);
   };
 
+  // 버튼 및 언어 선택기를 렌더링하는 함수입니다.
   const renderButtonsAndLanguageSelector = () => {
     return (
       <Grid item>
@@ -75,6 +80,7 @@ export default function Header() {
     );
   };
 
+  // Header를 렌더링합니다.
   return (
     <StyledAppBar position="fixed">
       <Container maxWidth="lg">

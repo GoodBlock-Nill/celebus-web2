@@ -1,0 +1,44 @@
+/* 배경색과 화면 구성 설정 */
+.screen {
+  min-height: 100vh;
+  background-color: #14054e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 왼쪽 텍스트 그룹 스타일 */
+.leftGroup {
+  padding: 2rem 0;
+}
+
+/* 텍스트 스타일 설정 */
+.textGroup {
+  display: flex;
+  align-items: center;
+  padding-bottom: 44px;
+}
+
+.textGroup .MuiTypography-root {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 이미지 그룹 스타일 설정 */
+.imageGroup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1022px) {
+  /* 모바일 환경에서의 텍스트 그룹 스타일 */
+  .textGroup {
+    flex-direction: column;
+  }
+  /* 모바일 환경에서의 이미지 그룹 스타일 */
+  .imageGroup {
+    justify-content: center;
+    padding-bottom: 44px;
+  }
+}
