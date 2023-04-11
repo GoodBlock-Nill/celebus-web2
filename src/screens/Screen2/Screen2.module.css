@@ -32,6 +32,10 @@
 
 /* 반응형 디자인을 위한 미디어 쿼리 */
 @media (max-width: 1022px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
   /* 모바일 환경에서의 텍스트 그룹 스타일 */
   .textGroup {
     flex-direction: column;
@@ -39,6 +43,6 @@
   /* 모바일 환경에서의 이미지 그룹 스타일 */
   .imageGroup {
     justify-content: center;
-    padding-bottom: 44px;
+    padding-top: 3rem;
   }
 }

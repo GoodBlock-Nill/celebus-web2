@@ -31,6 +31,7 @@ const theme = createTheme({
       main: '#fff',
       secondary: '#14054E',
       third: '#fafafa',
+      badge: '#B7E703',
     },
 
     text: {
@@ -46,22 +47,27 @@ const theme = createTheme({
 
   typography: {
     fontFamily: 'Noto Sans, sans-serif',
-    // Global font size
+    // 전역 폰트 사이즈
     fontSize: 16,
     h1: {
       fontSize: '4.25rem', //68px
+      fontWeight: 700, //Bold
     },
     h2: {
       fontSize: '3.875rem', //62px
+      fontWeight: 700, //Bold
     },
     h3: {
       fontSize: '3rem', //48px
+      fontWeight: 700, //Bold
     },
     h4: {
       fontSize: '2rem', //32px
+      fontWeight: 700, //bold
     },
     badge: {
-      fontSize: '1.25rem', //20px
+      fontSize: '1.5rem', //24px
+      fontWeight: 700,
     },
   },
 });

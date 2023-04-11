@@ -14,7 +14,12 @@ export default function Screen2() {
   return (
     <section className={Styles.screen}>
       <Container maxWidth="lg">
-        <Grid container justifyContent={'space-between'} alignItems={'center'}>
+        <Grid
+          container
+          justifyContent={'space-between'}
+          alignItems={'center'}
+          className={Styles.wrapper}
+        >
           {/* 왼쪽 텍스트 그룹 */}
           <Grid item xs={12} md={6} className={Styles.leftGroup}>
             <Fade>
