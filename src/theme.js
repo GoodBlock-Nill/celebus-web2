@@ -65,6 +65,10 @@ const theme = createTheme({
       fontSize: '2rem', //32px
       fontWeight: 700, //bold
     },
+    h5: {
+      fontSize: '1.75rem', //28px
+      fontWeight: 700,
+    },
     badge: {
       fontSize: '1.5rem', //24px
       fontWeight: 700,

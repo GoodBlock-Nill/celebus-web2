@@ -27,7 +27,10 @@ export default function Screen2() {
                 {/* 첫 번째 행 텍스트 */}
                 <Typography
                   sx={{
-                    fontSize: theme.typography.h4,
+                    fontSize: {
+                      xs: theme.typography.h5.fontSize,
+                      md: theme.typography.h4.fontSize,
+                    },
                     color: theme.palette.text.secondaryWhite,
                     fontWeight: 700,
                     paddingLeft: 2,
@@ -38,7 +41,10 @@ export default function Screen2() {
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: theme.typography.h3,
+                    fontSize: {
+                      xs: theme.typography.h4.fontSize,
+                      md: theme.typography.h3.fontSize,
+                    },
                     color: theme.palette.text.mainWhite,
                     fontWeight: 700,
                   }}
@@ -50,7 +56,10 @@ export default function Screen2() {
                 {/* 두 번째 행 텍스트 */}
                 <Typography
                   sx={{
-                    fontSize: theme.typography.h4,
+                    fontSize: {
+                      xs: theme.typography.h5.fontSize,
+                      md: theme.typography.h4.fontSize,
+                    },
                     color: theme.palette.text.secondaryWhite,
                     fontWeight: 700,
                     paddingLeft: 2,
@@ -61,7 +70,10 @@ export default function Screen2() {
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: theme.typography.h3,
+                    fontSize: {
+                      xs: theme.typography.h4.fontSize,
+                      md: theme.typography.h3.fontSize,
+                    },
                     color: theme.palette.text.mainWhite,
                     fontWeight: 700,
                   }}

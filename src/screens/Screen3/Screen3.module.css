@@ -30,7 +30,7 @@
 
 /* 텍스트 그룹 내 이미지 패딩 설정 */
 .textGroup img {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 /* 미디어 쿼리를 사용하여 1022px 이하의 화면에서 스타일 변경 */
@@ -43,6 +43,12 @@
   .screen .rightGroup {
     text-align: center;
     align-items: center;
+    flex-direction: column;
+  }
+  .textGroup img {
+    padding-top: 0;
+  }
+  .playerText {
     flex-direction: column;
   }
 }

@@ -49,8 +49,8 @@ export default function Screen3() {
                 <Typography
                   sx={{
                     fontSize: {
-                      xs: theme.typography.h3.fontSize,
-                      md: theme.typography.h2.fontSize,
+                      xs: theme.typography.h4.fontSize,
+                      md: theme.typography.h3.fontSize,
                     },
                     fontWeight: 700,
                     color: theme.palette.text.third,
@@ -64,8 +64,8 @@ export default function Screen3() {
                 <Typography
                   sx={{
                     fontSize: {
-                      xs: theme.typography.h3.fontSize,
-                      md: theme.typography.h2.fontSize,
+                      xs: theme.typography.h4.fontSize,
+                      md: theme.typography.h3.fontSize,
                     },
                     fontWeight: 700,
                     color: theme.palette.text.secondary,

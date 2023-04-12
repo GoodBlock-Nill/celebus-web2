@@ -17,9 +17,9 @@ const AppButton = styled(Button)(({ theme }) => ({
   paddingTop: '0.5rem',
   paddingBottom: '0.5rem',
   marginTop: '1rem',
-  marginBottom: '3rem',
   marginRight: '1rem',
   fontSize: '1.125rem',
+  maxWidth: '200px',
   color: theme.palette.primary.main,
   '&:hover': {
     backgroundColor: theme.palette.background.main,
@@ -40,8 +40,8 @@ export default function Screen5() {
                 <Typography
                   sx={{
                     fontSize: {
-                      xs: theme.typography.h4.fontSize,
-                      md: theme.typography.h3.fontSize,
+                      xs: theme.typography.h5.fontSize,
+                      md: theme.typography.h4.fontSize,
                     },
                     fontWeight: 700,
                     color: theme.palette.text.mainWhite,
@@ -50,7 +50,7 @@ export default function Screen5() {
                   {t('screen5.text1')}
                 </Typography>
               </Box>
-              <Box>
+              <Box className={Styles.appButtonGroup}>
                 <AppButton
                   LinkComponent={'a'}
                   href="https://apps.apple.com/app/idYOUR_APP_ID"
