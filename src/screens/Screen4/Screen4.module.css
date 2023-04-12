@@ -3,7 +3,7 @@
   display: flex;
   background-color: #fff;
   align-items: center;
-  padding: 2rem 0;
+  padding-top: 5rem;
 }
 
 .rightGroup {
@@ -24,8 +24,12 @@
   height: 100%;
 }
 
+.leftImgGroup {
+  padding-top: 5rem;
+}
+
 .rightImgGroup {
-  padding-bottom: 7rem;
+  padding-bottom: 12rem;
   height: min-content;
 }
 
@@ -62,6 +66,7 @@
 @media (max-width: 1220px) {
   .screen {
     min-height: 100vh;
+    padding: 2rem 0;
   }
 
   .screen .leftGroup,
@@ -85,6 +90,11 @@
     align-items: center;
     text-align: center;
   }
+
+  .leftImgGroup {
+    padding-top: 2rem;
+  }
+
   .leftImgGroup .leftBadge {
     left: -20%;
     max-width: 100%;
