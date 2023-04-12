@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   AppBar,
   Toolbar,
@@ -51,6 +51,24 @@ export default function Header() {
     setDrawerOpen(open);
   };
 
+  // 스크롤을 내리면 헤더가 보이도록 설정
+  const [scrolled, setScrolled] = useState(true);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 1) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   // 버튼 및 언어 선택기를 렌더링하는 함수입니다.
   const renderButtonsAndLanguageSelector = () => {
     return (
@@ -82,7 +100,15 @@ export default function Header() {
 
   // Header를 렌더링합니다.
   return (
-    <StyledAppBar position="fixed">
+    <StyledAppBar
+      position="fixed"
+      sx={{
+        backgroundColor: scrolled ? 'white' : 'transparent',
+        display: scrolled ? 'flex' : 'none',
+        transition: 'background-color 0.3s',
+        boxShadow: 'none',
+      }}
+    >
       <Container maxWidth="lg">
         <Toolbar>
           <Grid container alignItems="center" justifyContent="space-between">
