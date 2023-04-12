@@ -69,6 +69,10 @@ const theme = createTheme({
       fontSize: '1.5rem', //24px
       fontWeight: 700,
     },
+    appButton: {
+      fontSize: '1,125rem', //18px
+      fontWeight: 500,
+    },
   },
 });
 

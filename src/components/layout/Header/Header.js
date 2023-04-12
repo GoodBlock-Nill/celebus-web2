@@ -63,7 +63,7 @@ export default function Header() {
             rel="noopener noreferrer"
             startIcon={<AppStoreIcon />}
           >
-            AppStore
+            App Store
           </Button>
           <Button
             component="a"
@@ -72,7 +72,7 @@ export default function Header() {
             rel="noopener noreferrer"
             startIcon={<Icon icon="ri:google-play-fill" />}
           >
-            GooglePlay
+            Google Play
           </Button>
           <SelectLang />
         </ButtonGroup>
@@ -132,8 +132,8 @@ export default function Header() {
                         justifyContent="center"
                       >
                         <Button
-                          component="a"
-                          to="https://apps.apple.com/app/idYOUR_APP_ID"
+                          LinkComponent="a"
+                          href="https://apps.apple.com/app/idYOUR_APP_ID"
                           target="_blank"
                           rel="noopener noreferrer"
                           startIcon={<AppStoreIcon />}
@@ -141,8 +141,8 @@ export default function Header() {
                           AppStore
                         </Button>
                         <Button
-                          component="a"
-                          to="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
+                          LinkComponent="a"
+                          href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
                           target="_blank"
                           rel="noopener noreferrer"
                           startIcon={<Icon icon="ri:google-play-fill" />}

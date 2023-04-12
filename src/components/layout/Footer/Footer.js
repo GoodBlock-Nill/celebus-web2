@@ -17,9 +17,16 @@ const Footer = () => {
   return (
     <footer>
       <Container maxWidth="lg">
-        <Grid container justifyContent="space-between" alignItems="center">
+        <Grid
+          container
+          justifyContent="space-between"
+          alignItems="center"
+          sx={{
+            height: '200px',
+          }}
+        >
           {/* Footer Left */}
-          <Grid item xs={12} md={4} textAlign={isMd ? 'center' : 'inherit'}>
+          <Grid item xs={12} md={3} textAlign={isMd ? 'center' : 'inherit'}>
             <Box>
               <IconButton href="https://youtube.com" target="_blank">
                 <YouTubeIcon />
@@ -30,13 +37,13 @@ const Footer = () => {
             </Box>
           </Grid>
           {/* Footer Center */}
-          <Grid item xs={12} md={4} textAlign={'center'}>
+          <Grid item xs={12} md={6} textAlign={'center'}>
             <Typography color={theme.palette.text.secondary}>
               © 2023 Celebus, Inc. All Rights Reserved.
             </Typography>
           </Grid>
           {/* Footer Right */}
-          <Grid item xs={12} md={4} textAlign={isMd ? 'center' : 'end'}>
+          <Grid item xs={12} md={3} textAlign={isMd ? 'center' : 'end'}>
             <Button href="#" target="_blank">
               <Typography color={theme.palette.text.secondary}>
                 Privacy Policy

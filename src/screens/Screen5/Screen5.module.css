@@ -1,0 +1,33 @@
+.screen {
+  display: flex;
+  background-color: #14054e;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.rightGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.rightImgGroup {
+  position: relative;
+}
+
+.rightPhoneLogo {
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  bottom: 30%;
+}
+
+@media (max-width: 1022px) {
+  .leftGroup,
+  .rightGroup {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -27,7 +27,9 @@ function App() {
       <Element name="screen5">
         <Screen5 />
       </Element>
-      <Footer />
+      <Element name='"footer'>
+        <Footer />
+      </Element>
     </div>
   );
 }
