@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 
 // 로고 스타일을 설정합니다.
 const Logo = styled('img')(({ theme }) => ({
-  maxWidth: '245.6px', // Adjust the width according to your logo size
+  maxWidth: '60%', // Adjust the width according to your logo size
 }));
 
 // 버튼 그룹 스타일을 설정합니다.
