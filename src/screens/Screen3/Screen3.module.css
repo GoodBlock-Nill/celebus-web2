@@ -4,6 +4,7 @@
   min-height: 100vh;
   background-color: #fafafa;
   align-items: center;
+  padding: 2rem 0;
 }
 
 /* 왼쪽 그룹 패딩 설정 */
