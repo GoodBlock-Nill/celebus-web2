@@ -19,7 +19,7 @@ const AppButton = styled(Button)(({ theme }) => ({
   marginTop: '1rem',
   marginRight: '1rem',
   fontSize: '1.125rem',
-  maxWidth: '200px',
+  width: '200px',
   color: theme.palette.primary.main,
   '&:hover': {
     backgroundColor: theme.palette.background.main,
@@ -41,7 +41,7 @@ export default function Screen5() {
                   sx={{
                     fontSize: {
                       xs: theme.typography.h5.fontSize,
-                      md: theme.typography.h4.fontSize,
+                      md: theme.typography.h2.fontSize,
                     },
                     fontWeight: 700,
                     color: theme.palette.text.mainWhite,

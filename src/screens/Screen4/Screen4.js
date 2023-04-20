@@ -50,7 +50,7 @@ export default function Screen4() {
                   color: theme.palette.text.secondary,
                   fontSize: {
                     xs: theme.typography.h5.fontSize,
-                    md: theme.typography.h4.fontSize,
+                    md: theme.typography.h3.fontSize,
                   },
                   fontWeight: 700,
                 }}
@@ -64,7 +64,7 @@ export default function Screen4() {
                     color: theme.palette.text.secondary,
                     fontSize: {
                       xs: theme.typography.h5.fontSize,
-                      md: theme.typography.h4.fontSize,
+                      md: theme.typography.h3.fontSize,
                     },
                     fontWeight: 700,
                   }}
@@ -75,7 +75,7 @@ export default function Screen4() {
                   sx={{
                     fontSize: {
                       xs: theme.typography.h5.fontSize,
-                      md: theme.typography.h4.fontSize,
+                      md: theme.typography.h3.fontSize,
                     },
                     fontWeight: 700,
                     paddingLeft: 1,
@@ -88,7 +88,7 @@ export default function Screen4() {
                     color: theme.palette.text.secondary,
                     fontSize: {
                       xs: theme.typography.h5.fontSize,
-                      md: theme.typography.h4.fontSize,
+                      md: theme.typography.h3.fontSize,
                     },
                     fontWeight: 700,
                     paddingLeft: 1,

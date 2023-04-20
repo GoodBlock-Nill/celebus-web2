@@ -1,13 +1,13 @@
 import {
   Grid,
   Button,
-  IconButton,
+  // IconButton,
   Typography,
   useMediaQuery,
 } from '@mui/material';
-import { Box, Container, useTheme } from '@mui/system';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import { Container, useTheme } from '@mui/system';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
+// import TwitterIcon from '@mui/icons-material/Twitter';
 import React from 'react';
 
 const Footer = () => {
@@ -22,11 +22,11 @@ const Footer = () => {
           justifyContent="space-between"
           alignItems="center"
           sx={{
-            height: '200px',
+            height: { md: '200px', xs: '120px' },
           }}
         >
           {/* Footer Left */}
-          <Grid item xs={12} md={3} textAlign={isMd ? 'center' : 'inherit'}>
+          {/* <Grid item xs={12} md={3} textAlign={isMd ? 'center' : 'inherit'}>
             <Box>
               <IconButton href="https://youtube.com" target="_blank">
                 <YouTubeIcon />
@@ -35,15 +35,15 @@ const Footer = () => {
                 <TwitterIcon />
               </IconButton>
             </Box>
-          </Grid>
+          </Grid> */}
           {/* Footer Center */}
-          <Grid item xs={12} md={6} textAlign={'center'}>
+          <Grid item xs={12} md={6} textAlign={isMd ? 'center' : 'inherit'}>
             <Typography color={theme.palette.text.secondary}>
               © 2023 Celebus, Inc. All Rights Reserved.
             </Typography>
           </Grid>
           {/* Footer Right */}
-          <Grid item xs={12} md={3} textAlign={isMd ? 'center' : 'end'}>
+          <Grid item xs={12} md={6} textAlign={isMd ? 'center' : 'end'}>
             <Button href="#" target="_blank">
               <Typography color={theme.palette.text.secondary}>
                 Privacy Policy
