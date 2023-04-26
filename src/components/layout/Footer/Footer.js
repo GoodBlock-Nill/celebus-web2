@@ -44,12 +44,18 @@ const Footer = () => {
           </Grid>
           {/* Footer Right */}
           <Grid item xs={12} md={6} textAlign={isMd ? 'center' : 'end'}>
-            <Button href="#" target="_blank">
+            <Button
+              href="https://celebus.zendesk.com/hc/en-us/articles/6848186309903"
+              target="_blank"
+            >
               <Typography color={theme.palette.text.secondary}>
                 Privacy Policy
               </Typography>
             </Button>
-            <Button href="#" target="_blank">
+            <Button
+              href="https://celebus.zendesk.com/hc/en-us/articles/6847986261647"
+              target="_blank"
+            >
               <Typography color={theme.palette.text.secondary}>
                 Terms of Service
               </Typography>
