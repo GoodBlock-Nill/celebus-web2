@@ -112,10 +112,15 @@ export default function Header() {
     >
       <Container maxWidth="lg">
         <Toolbar>
-          <Grid container alignItems="center" justifyContent="space-between">
+          <Grid
+            container
+            alignItems="center"
+            justifyContent="space-between"
+            flexDirection="row"
+          >
             <Grid item>
               <Link to="/">
-                <Logo src={logo} alt="Logo" />
+                <Logo src={logo} alt="Logo" sx={{ maxWidth: '180px' }} />
               </Link>
             </Grid>
             {isSmallScreen ? (

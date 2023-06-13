@@ -37,7 +37,13 @@ const Footer = () => {
             </Box>
           </Grid> */}
           {/* Footer Center */}
-          <Grid item xs={12} md={6} textAlign={isMd ? 'center' : 'inherit'}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            textAlign={isMd ? 'center' : 'inherit'}
+            sx={{ paddingTop: '1rem' }}
+          >
             <Typography color={theme.palette.text.secondary}>
               © 2023 Celebus, Inc. All Rights Reserved.
             </Typography>
