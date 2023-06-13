@@ -21,8 +21,9 @@
 .rightPhoneLogo {
   position: absolute;
   z-index: 1;
-  right: 10%;
-  bottom: 30%;
+  right: 26%;
+  bottom: 40%;
+  width: 150px;
 }
 
 @media (max-width: 1022px) {
