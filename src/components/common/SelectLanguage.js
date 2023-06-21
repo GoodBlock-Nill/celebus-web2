@@ -38,7 +38,7 @@ export default function SelectLanguage() {
         <MenuItem value="en">{t(`language.English`)}</MenuItem>
         <MenuItem value="ko">{t(`language.Korean`)}</MenuItem>
         <MenuItem value="ja">{t(`language.Japanese`)}</MenuItem>
-        <MenuItem value="zh">{t(`language.Chinese`)}</MenuItem>
+        {/* <MenuItem value="zh">{t(`language.Chinese`)}</MenuItem> */}
       </Select>
     </FormControl>
   );
