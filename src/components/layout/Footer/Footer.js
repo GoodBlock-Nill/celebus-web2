@@ -66,6 +66,14 @@ const Footer = () => {
                 Terms of Service
               </Typography>
             </Button>
+            <Button
+              href="https://celebus.zendesk.com/hc/en-us/"
+              target="_blank"
+            >
+              <Typography color={theme.palette.text.secondary}>
+                Help Center
+              </Typography>
+            </Button>
           </Grid>
         </Grid>
       </Container>
