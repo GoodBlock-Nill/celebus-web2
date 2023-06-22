@@ -22,34 +22,13 @@ const Footer = () => {
           justifyContent="space-between"
           alignItems="center"
           sx={{
-            height: { md: '200px', xs: '120px' },
+            height: { md: '250px', xs: '250px' },
+            paddingTop: '1rem',
+            paddingBottom: '1rem',
           }}
         >
           {/* Footer Left */}
-          {/* <Grid item xs={12} md={3} textAlign={isMd ? 'center' : 'inherit'}>
-            <Box>
-              <IconButton href="https://youtube.com" target="_blank">
-                <YouTubeIcon />
-              </IconButton>
-              <IconButton href="https://twitter.com" target="_blank">
-                <TwitterIcon />
-              </IconButton>
-            </Box>
-          </Grid> */}
-          {/* Footer Center */}
-          <Grid
-            item
-            xs={12}
-            md={6}
-            textAlign={isMd ? 'center' : 'inherit'}
-            sx={{ paddingTop: '1rem' }}
-          >
-            <Typography color={theme.palette.text.secondary}>
-              © 2023 Celebus, Inc. All Rights Reserved.
-            </Typography>
-          </Grid>
-          {/* Footer Right */}
-          <Grid item xs={12} md={6} textAlign={isMd ? 'center' : 'end'}>
+          <Grid item xs={12} md={12} textAlign={isMd ? 'center' : 'inherit'}>
             <Button
               href="https://celebus.zendesk.com/hc/en-us/articles/6848186309903"
               target="_blank"
@@ -74,6 +53,40 @@ const Footer = () => {
                 Help Center
               </Typography>
             </Button>
+          </Grid>
+          {/* Footer Center */}
+          <Grid item xs={12} md={12} textAlign={isMd ? 'center' : 'inherit'}>
+            <Typography
+              color={theme.palette.text.secondary}
+              sx={{ fontSize: '0.8rem', marginTop: '0.2rem' }}
+            >
+              Contact Us: support@celebus.app
+            </Typography>
+            <Typography
+              color={theme.palette.text.secondary}
+              sx={{ fontSize: '0.8rem', marginTop: '0.2rem' }}
+            >
+              Location: 21-10, Dosan-daero 30-gil, Gangnam-gu, Seoul, Republic
+              of Korea
+            </Typography>
+            <Typography
+              color={theme.palette.text.secondary}
+              sx={{ fontSize: '0.8rem', marginTop: '0.2rem' }}
+            >
+              Business registration number: 674-88-02641
+            </Typography>
+          </Grid>
+          {/* Footer Right */}
+          <Grid
+            item
+            xs={12}
+            md={12}
+            textAlign={isMd ? 'center' : 'inherit'}
+            sx={{ paddingTop: '1rem' }}
+          >
+            <Typography color={theme.palette.text.secondary}>
+              © 2023 Celebus Inc. All Rights Reserved.
+            </Typography>
           </Grid>
         </Grid>
       </Container>
